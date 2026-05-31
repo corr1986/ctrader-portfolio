@@ -7,7 +7,7 @@ using cAlgo.API;
 /// NON invia ordini. NON modifica posizioni. NON interagisce con altri bot.
 /// Scrive uno snapshot JSON in C:\AccountMonitor\snapshot.json ogni X minuti.
 /// </summary>
-[Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.None)]
+[Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.FullAccess)]
 public class AccountMonitor : Robot
 {
     [Parameter("Cartella output", DefaultValue = @"C:\AccountMonitor")]
