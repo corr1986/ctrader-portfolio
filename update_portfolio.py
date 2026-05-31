@@ -19,7 +19,7 @@ GITHUB_REPO    = "https://github.com/corr1986/ctrader-portfolio.git"
 
 
 def load_snapshot() -> dict:
-    with open(SNAPSHOT_PATH, encoding="utf-8") as f:
+    with open(SNAPSHOT_PATH, encoding="utf-8-sig") as f:
         return json.load(f)
 
 
