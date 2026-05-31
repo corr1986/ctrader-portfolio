@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 31/05/2026 21:50 UTC*
+*Aggiornato: 31/05/2026 22:20 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 2500.00 EUR |
-| Equity | 2500.73 EUR |
-| P&L non realizzato | +0.73 EUR |
+| Equity | 2502.95 EUR |
+| P&L non realizzato | +2.95 EUR |
 | P&L realizzato totale | +26.73 EUR |
 | Posizioni aperte | 5 |
 | Trade chiusi totali | 17 (15W / 2L) |
@@ -21,11 +21,11 @@
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| EURAUD | Buy | 0.01 | 1.61194 | 1.62386 | +5.83 EUR | 119.2 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.01 | 1.16397 | 1.16604 | -1.28 EUR | -20.7 | 1.20000 | 1.10000 | TRFX_SIGNALS |
-| GBPUSD | Sell | 0.01 | 1.34274 | 1.34597 | -2.93 EUR | -32.3 | 1.40000 | 1.25000 | TRFX_SIGNALS |
-| USDCAD | Sell | 0.01 | 1.38610 | 1.38060 | +3.24 EUR | 55.0 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.01 | 1.16120 | 1.16604 | -4.13 EUR | -48.4 | 1.18300 | 1.13000 | TRFX_EXTRA |
+| EURAUD | Buy | 0.01 | 1.61194 | 1.62358 | +5.67 EUR | 116.4 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.01 | 1.16397 | 1.16548 | -0.80 EUR | -15.1 | 1.20000 | 1.10000 | TRFX_SIGNALS |
+| GBPUSD | Sell | 0.01 | 1.34274 | 1.34490 | -2.01 EUR | -21.6 | 1.40000 | 1.25000 | TRFX_SIGNALS |
+| USDCAD | Sell | 0.01 | 1.38610 | 1.37979 | +3.74 EUR | 63.1 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.01 | 1.16120 | 1.16548 | -3.65 EUR | -42.8 | 1.18300 | 1.13000 | TRFX_EXTRA |
 
 ---
 
