@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 04/06/2026 04:20 UTC*
+*Aggiornato: 04/06/2026 05:20 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 2500.00 EUR |
-| Equity | 2504.52 EUR |
-| P&L non realizzato | +4.52 EUR |
+| Equity | 2503.80 EUR |
+| P&L non realizzato | +3.80 EUR |
 | P&L realizzato totale | +26.73 EUR |
 | Posizioni aperte | 7 |
 | Trade chiusi totali | 17 (15W / 2L) |
@@ -21,13 +21,13 @@
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| EURAUD | Buy | 0.01 | 1.61194 | 1.62856 | +8.33 EUR | 166.2 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.01 | 1.16397 | 1.16054 | +3.66 EUR | 34.3 | 1.20000 | 1.10000 | TRFX_SIGNALS |
-| GBPUSD | Sell | 0.01 | 1.34274 | 1.34234 | +0.12 EUR | 4.0 | 1.40000 | 1.25000 | TRFX_SIGNALS |
-| USDCAD | Sell | 0.01 | 1.38610 | 1.39027 | -3.05 EUR | -41.7 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.01 | 1.16120 | 1.16054 | +0.79 EUR | 6.6 | 1.18300 | 1.13000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.01 | 1.20633 | 1.21399 | -4.02 EUR | -76.6 | 1.23100 | 1.17000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.01 | 1.21161 | 1.21399 | -1.33 EUR | -23.8 | 1.23600 | 1.18000 | TRFX_EXTRA |
+| EURAUD | Buy | 0.01 | 1.61194 | 1.62886 | +8.51 EUR | 169.2 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.01 | 1.16397 | 1.16079 | +3.44 EUR | 31.8 | 1.20000 | 1.10000 | TRFX_SIGNALS |
+| GBPUSD | Sell | 0.01 | 1.34274 | 1.34263 | -0.13 EUR | 1.1 | 1.40000 | 1.25000 | TRFX_SIGNALS |
+| USDCAD | Sell | 0.01 | 1.38610 | 1.39076 | -3.36 EUR | -46.6 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.01 | 1.16120 | 1.16079 | +0.57 EUR | 4.1 | 1.18300 | 1.13000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.01 | 1.20633 | 1.21386 | -3.96 EUR | -75.3 | 1.23100 | 1.17000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.01 | 1.21161 | 1.21386 | -1.27 EUR | -22.5 | 1.23600 | 1.18000 | TRFX_EXTRA |
 
 ---
 
