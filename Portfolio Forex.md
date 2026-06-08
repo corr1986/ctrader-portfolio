@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 08/06/2026 10:20 UTC*
+*Aggiornato: 08/06/2026 10:50 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 2500.25 EUR |
-| Equity | 2519.91 EUR |
-| P&L non realizzato | +19.66 EUR |
+| Equity | 2517.81 EUR |
+| P&L non realizzato | +17.56 EUR |
 | P&L realizzato totale | +34.36 EUR |
 | Posizioni aperte | 7 |
 | Trade chiusi totali | 23 (20W / 3L) |
@@ -21,13 +21,13 @@
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| EURAUD | Buy | 0.01 | 1.61194 | 1.63328 | +11.05 EUR | 213.4 | — | 1.64194 | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.01 | 1.21161 | 1.21408 | -1.42 EUR | -24.7 | 1.23600 | 1.18000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.01 | 1.16397 | 1.15165 | +11.48 EUR | 123.2 | 1.20000 | 1.10000 | TRFX_SIGNALS |
-| USDCAD | Sell | 0.02 | 1.39116 | 1.39445 | -4.42 EUR | -32.9 | — | — | GridMartDailyFinalFixed |
-| USDCAD | Sell | 0.01 | 1.38610 | 1.39445 | -5.79 EUR | -83.5 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.01 | 1.21503 | 1.21408 | +0.40 EUR | 9.5 | 1.24050 | 1.17000 | TRFX_EXTRA |
-| GBPUSD | Sell | 0.01 | 1.34274 | 1.33284 | +8.36 EUR | 99.0 | 1.40000 | 1.25000 | TRFX_SIGNALS |
+| EURAUD | Buy | 0.01 | 1.61194 | 1.63241 | +10.52 EUR | 204.7 | — | 1.64194 | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.01 | 1.21161 | 1.21389 | -1.32 EUR | -22.8 | 1.23600 | 1.18000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.01 | 1.16397 | 1.15271 | +10.55 EUR | 112.6 | 1.20000 | 1.10000 | TRFX_SIGNALS |
+| USDCAD | Sell | 0.02 | 1.39116 | 1.39417 | -4.07 EUR | -30.1 | — | — | GridMartDailyFinalFixed |
+| USDCAD | Sell | 0.01 | 1.38610 | 1.39417 | -5.61 EUR | -80.7 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.01 | 1.21503 | 1.21389 | +0.50 EUR | 11.4 | 1.24050 | 1.17000 | TRFX_EXTRA |
+| GBPUSD | Sell | 0.01 | 1.34274 | 1.33441 | +6.99 EUR | 83.3 | 1.40000 | 1.25000 | TRFX_SIGNALS |
 
 ---
 
