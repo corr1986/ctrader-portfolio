@@ -34,6 +34,65 @@ def fmt_price(value) -> str:
     return f"{float(value):.5f}"
 
 
+# ─── Breakdown per strategia (raggruppamento per label) ─────────────────────────
+STRATEGY_ORDER = ["GridMartingala", "TRFX Extra", "TRFX Signal"]
+
+
+def classify_label(label) -> str:
+    """Mappa la label di una posizione al gruppo strategia."""
+    lb = label or ""
+    if lb == "GridMartDailyFinalFixed":
+        return "GridMartingala"
+    if lb == "TRFX_EXTRA":
+        return "TRFX Extra"
+    if lb.startswith("TRFX_EXTRA_") or "SIGNAL" in lb.upper():
+        return "TRFX Signal"
+    return "Altro"
+
+
+def aggregate_by_strategy(positions: list) -> dict:
+    """Somma P&L e conta le posizioni aperte per gruppo strategia."""
+    agg: dict = {}
+    for p in positions:
+        g = classify_label(p.get("label"))
+        bucket = agg.setdefault(g, {"pnl": 0.0, "count": 0})
+        bucket["pnl"] += p["pnl"]
+        bucket["count"] += 1
+    return agg
+
+
+def strategy_table(positions: list, balance: float, currency: str) -> str:
+    """Tabella markdown: P&L non realizzato e % sul balance per ogni strategia."""
+    if not positions:
+        return "## Performance per strategia\n*Nessuna posizione aperta.*\n"
+
+    agg = aggregate_by_strategy(positions)
+    lines = [
+        "## Performance per strategia",
+        "*P&L non realizzato delle posizioni aperte, % sul balance del conto.*",
+        "| Strategia | Pos | P&L | % su balance |",
+        "|---|---|---|---|",
+    ]
+    # ordine fisso noto, poi eventuali gruppi imprevisti (Altro) in coda
+    groups = [g for g in STRATEGY_ORDER if g in agg]
+    groups += [g for g in agg if g not in STRATEGY_ORDER]
+
+    tot_pnl, tot_cnt = 0.0, 0
+    for g in groups:
+        pnl, cnt = agg[g]["pnl"], agg[g]["count"]
+        tot_pnl += pnl
+        tot_cnt += cnt
+        pct = (pnl / balance * 100) if balance else 0.0
+        lines.append(f"| {g} | {cnt} | {fmt_pnl(pnl, currency)} | {pct:+.2f}% |")
+
+    tot_pct = (tot_pnl / balance * 100) if balance else 0.0
+    lines.append(
+        f"| **Totale** | **{tot_cnt}** | **{fmt_pnl(tot_pnl, currency)}** "
+        f"| **{tot_pct:+.2f}%** |"
+    )
+    return "\n".join(lines) + "\n"
+
+
 def positions_table(positions: list, currency: str) -> str:
     if not positions:
         return "## Posizioni aperte\n*Nessuna posizione aperta.*\n"
@@ -92,8 +151,9 @@ def generate_markdown(data: dict) -> str:
 | Trade chiusi totali | {total} ({wl}) |
 | Win Rate | {data['win_rate']:.1f}% |"""
 
-    pos_section  = positions_table(data.get("positions", []), cur)
-    hist_section = history_table(data.get("history", []), cur)
+    strat_section = strategy_table(data.get("positions", []), data["balance"], cur)
+    pos_section   = positions_table(data.get("positions", []), cur)
+    hist_section  = history_table(data.get("history", []), cur)
 
     return f"""# Portfolio Forex — cTrader
 *Aggiornato: {ts} UTC*
@@ -104,6 +164,9 @@ def generate_markdown(data: dict) -> str:
 
 {summary}
 
+---
+
+{strat_section}
 ---
 
 {pos_section}
@@ -125,6 +188,10 @@ def git_push(repo_path: str, message: str) -> bool:
         if result.returncode != 0 and "nothing to commit" in result.stdout:
             print("Nessuna modifica da committare.")
             return True
+        # pull --rebase prima del push: assorbe eventuali aggiornamenti di codice
+        # committati dal locale, evita che la VPS si blocchi su push non fast-forward
+        subprocess.run(["git", "-C", repo_path, "pull", "--rebase", "origin", "main"],
+                       check=True, capture_output=True)
         subprocess.run(["git", "-C", repo_path, "push"], check=True, capture_output=True)
         print(f"✓ Push GitHub: {message}")
         return True
