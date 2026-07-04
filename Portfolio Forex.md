@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 04/07/2026 13:01 UTC*
+*Aggiornato: 04/07/2026 14:01 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -31,6 +31,7 @@
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
+| EURGBP | Buy | 0.01 | 0.85776 | 0.85623 | -2.01 EUR | -15.3 | — | — | GridMartDailyFinalFixed |
 | EURUSD | Buy | 0.01 | 1.13631 | 1.14360 | +5.29 EUR | 72.9 | — | — | GridMartDailyFinalFixed |
 | USDCAD | Sell | 0.01 | 1.42228 | 1.42027 | +0.48 EUR | 20.1 | — | — | GridMartDailyFinalFixed |
 | USDCHF | Sell | 0.01 | 0.81080 | 0.80398 | +5.82 EUR | 68.2 | — | — | GridMartDailyFinalFixed |
@@ -48,7 +49,6 @@
 | CADCHF | Buy | 0.01 | 0.57146 | 0.56534 | -6.14 EUR | -61.2 | — | — | TRFX_EXTRA_002 |
 | EURUSD | Sell | 0.01 | 1.15613 | 1.14373 | +11.86 EUR | 124.0 | — | — | TRFX_EXTRA_012 |
 | EURUSD | Sell | 0.01 | 1.15613 | 1.14373 | +11.86 EUR | 124.0 | — | — | TRFX_EXTRA_014 |
-| EURGBP | Buy | 0.01 | 0.85776 | 0.85623 | -2.01 EUR | -15.3 | — | — | GridMartDailyFinalFixed |
 
 ---
 
