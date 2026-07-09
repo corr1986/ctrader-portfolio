@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 09/07/2026 04:01 UTC*
+*Aggiornato: 09/07/2026 05:01 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 3239.58 EUR |
-| Equity | 3266.57 EUR |
-| P&L non realizzato | +26.99 EUR |
+| Equity | 3266.71 EUR |
+| P&L non realizzato | +27.13 EUR |
 | P&L realizzato totale | -134.04 EUR |
 | Posizioni aperte | 22 |
 | Trade chiusi totali | 62 (44W / 18L) |
@@ -22,22 +22,22 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| GridMartingala | 8 | +8.17 EUR | +0.25% |
-| TRFX Extra | 2 | +3.26 EUR | +0.10% |
-| TRFX Signal | 12 | +15.56 EUR | +0.48% |
-| **Totale** | **22** | **+26.99 EUR** | **+0.83%** |
+| GridMartingala | 8 | +8.58 EUR | +0.26% |
+| TRFX Extra | 2 | +3.30 EUR | +0.10% |
+| TRFX Signal | 12 | +15.26 EUR | +0.47% |
+| **Totale** | **22** | **+27.14 EUR** | **+0.84%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| EURGBP | Buy | 0.01 | 0.85776 | 0.85301 | -6.20 EUR | -47.5 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Buy | 0.01 | 1.13631 | 1.14260 | +4.00 EUR | 62.9 | — | — | GridMartDailyFinalFixed |
-| USDCAD | Sell | 0.01 | 1.42228 | 1.41672 | +2.39 EUR | 55.6 | — | — | GridMartDailyFinalFixed |
-| USDCHF | Sell | 0.01 | 0.81080 | 0.80730 | +1.55 EUR | 35.0 | — | — | GridMartDailyFinalFixed |
-| AUDUSD | Buy | 0.01 | 0.69021 | 0.69339 | +2.41 EUR | 31.8 | — | — | GridMartDailyFinalFixed |
-| NZDUSD | Buy | 0.01 | 0.56511 | 0.57227 | +5.84 EUR | 71.6 | — | — | GridMartDailyFinalFixed |
+| EURGBP | Buy | 0.01 | 0.85776 | 0.85280 | -6.45 EUR | -49.6 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Buy | 0.01 | 1.13631 | 1.14276 | +4.14 EUR | 64.5 | — | — | GridMartDailyFinalFixed |
+| USDCAD | Sell | 0.01 | 1.42228 | 1.41632 | +2.63 EUR | 59.6 | — | — | GridMartDailyFinalFixed |
+| USDCHF | Sell | 0.01 | 0.81080 | 0.80709 | +1.78 EUR | 37.1 | — | — | GridMartDailyFinalFixed |
+| AUDUSD | Buy | 0.01 | 0.69021 | 0.69380 | +2.77 EUR | 35.9 | — | — | GridMartDailyFinalFixed |
+| NZDUSD | Buy | 0.01 | 0.56511 | 0.57264 | +6.16 EUR | 75.3 | — | — | GridMartDailyFinalFixed |
 | CADCHF | Buy | 0.01 | 0.57146 | 0.56990 | -1.06 EUR | -15.6 | — | — | TRFX_EXTRA_003 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.56990 | -1.05 EUR | -15.5 | — | — | TRFX_EXTRA_004 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.56990 | -1.05 EUR | -15.5 | — | — | TRFX_EXTRA_006 |
@@ -48,12 +48,12 @@
 | CADCHF | Buy | 0.01 | 0.57146 | 0.56990 | -1.06 EUR | -15.6 | — | — | TRFX_EXTRA_009 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.56990 | -1.05 EUR | -15.5 | — | — | TRFX_EXTRA_001 |
 | CADCHF | Buy | 0.01 | 0.57146 | 0.56990 | -1.06 EUR | -15.6 | — | — | TRFX_EXTRA_002 |
-| EURUSD | Sell | 0.01 | 1.15613 | 1.14260 | +13.06 EUR | 135.3 | — | — | TRFX_EXTRA_012 |
-| EURUSD | Sell | 0.01 | 1.15613 | 1.14260 | +13.06 EUR | 135.3 | — | — | TRFX_EXTRA_014 |
-| GBPCHF | Sell | 0.01 | 1.08024 | 1.08139 | -1.82 EUR | -11.5 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.01 | 1.21421 | 1.21164 | +1.18 EUR | 25.7 | 1.23500 | 1.19000 | TRFX_EXTRA |
-| EURGBP | Buy | 0.02 | 0.85276 | 0.85301 | +0.00 EUR | 2.5 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.01 | 1.21601 | 1.21164 | +2.08 EUR | 43.7 | 1.23800 | 1.19000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.01 | 1.15613 | 1.14277 | +12.91 EUR | 133.6 | — | — | TRFX_EXTRA_012 |
+| EURUSD | Sell | 0.01 | 1.15613 | 1.14277 | +12.91 EUR | 133.6 | — | — | TRFX_EXTRA_014 |
+| GBPCHF | Sell | 0.01 | 1.08024 | 1.08151 | -1.95 EUR | -12.7 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.01 | 1.21421 | 1.21160 | +1.20 EUR | 26.1 | 1.23500 | 1.19000 | TRFX_EXTRA |
+| EURGBP | Buy | 0.02 | 0.85276 | 0.85280 | -0.50 EUR | 0.4 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.01 | 1.21601 | 1.21160 | +2.10 EUR | 44.1 | 1.23800 | 1.19000 | TRFX_EXTRA |
 
 ---
 
