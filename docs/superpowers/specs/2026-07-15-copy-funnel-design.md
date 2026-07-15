@@ -66,6 +66,15 @@ Canale gratuito che riusa render/compose per aggiornare i copiatori. Si attiva q
 2. Incollare la descrizione strategia nella pagina cTrader Copy (Fase 1).
 3. Creare account X per il brand (proposta: nome coerente con "xybridfx") + account developer (developer.x.com, piano Free) e fornire le 4 chiavi da mettere in `.env`.
 
+## Rischio noto: segnali TRFX di terzi (valutato 15/07/2026)
+
+I trade copiati includono le esecuzioni dei segnali TRFX (servizio di terzi): possibile
+violazione dei loro termini su ridistribuzione/uso commerciale, e rischio di continuità
+se l'accesso ai segnali cessa. Rischio pratico ~zero a zero copiatori. **Mitigazione
+pianificata quando arriveranno copiatori veri:** secondo conto cTrader con sola
+GridMartingala (codice proprietario al 100%) come strategia copiabile; i segnali TRFX
+restano sul conto non copiato. Da fare subito: verificare i termini del servizio TRFX.
+
 ## Fuori scope
 
 Streaming, vendita segnali, Darwinex/Collective2, Instagram (eventuale riuso ReelFactory in futuro), automazione della pubblicazione senza approvazione utente.
