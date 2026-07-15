@@ -3,7 +3,18 @@
 > Pronta da incollare. Versione EN (consigliata: il pubblico copy è globale) e IT.
 > Aggiornata: 2026-07-15.
 
-## Versione EN corta — 940 caratteri, per il limite di 1024 della pagina copy (INCOLLATA IL 15/07/2026)
+## ⭐ VERSIONE LIVE sulla pagina copy dal 15/07/2026 — 368 caratteri, riga unica
+
+```
+XybridFX - two automated engines on one real account. Swing entries with fixed SL/TP plus a mean-reversion grid on 10 FX pairs (Daily RSI 30/70, +2% profit cycles, recovery mode, hard equity stop at -20%). No individual SL on grid positions: expect 10-20% equity swings. Micro volumes. Verified on Myfxbook (XybridFx). Past results do not guarantee future performance.
+```
+
+**Lezione sul campo descrizione cTrader:** il limite di 1024 "simboli" conta l'HTML nascosto
+(markup dei paragrafi, formattazione trascinata dall'incolla) E il contenuto già presente nel
+campo. Per aggiornare: Ctrl+A → incollare testo puro (via Blocco Note), un solo paragrafo,
+niente URL lunghe. Testo visibile massimo affidabile: ~350-400 caratteri se su riga unica.
+
+## Versione EN 940 caratteri (troppo lunga per il campo, tenuta come riferimento)
 
 ```
 XybridFX — Two engines, one account. Real money, fully automated, verifiable.
