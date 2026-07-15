@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 _snap_tmp.json
+copyfunnel/.env
+copyfunnel/out/
+__pycache__/
