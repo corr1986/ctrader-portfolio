@@ -17,6 +17,7 @@ This strategy combines two independent automated systems running 24/5 on a real-
 - Grid positions do not carry individual stop losses — floating drawdown is part of how the system works. If you cannot tolerate temporary equity swings of 10-20%, this strategy is not for you.
 - Volumes are micro-sized and scale with balance. No overleveraging.
 - I publish the full account state (balance, equity, every position) every hour on a public GitHub repository — nothing to hide, losing weeks included.
+- Independently verified on Myfxbook: https://www.myfxbook.com/members/corr1986/xybridfx/12050062
 
 Past performance does not guarantee future results. Copy only with money you can afford to risk.
 
@@ -34,6 +35,7 @@ Questa strategia combina due sistemi automatici indipendenti attivi 24/5 su un c
 - Le posizioni della griglia non hanno stop loss individuale: il drawdown flottante fa parte del funzionamento. Se non tolleri oscillazioni temporanee dell'equity del 10-20%, questa strategia non fa per te.
 - Volumi micro, che scalano col balance. Nessuna leva eccessiva.
 - Pubblico lo stato completo del conto (balance, equity, ogni posizione) ogni ora su un repository GitHub pubblico — niente da nascondere, incluse le settimane negative.
+- Verificato in modo indipendente su Myfxbook: https://www.myfxbook.com/members/corr1986/xybridfx/12050062
 
 Le performance passate non garantiscono risultati futuri. Copia solo con denaro che puoi permetterti di rischiare.
 
