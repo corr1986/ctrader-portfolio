@@ -1,6 +1,31 @@
 """Test per il breakdown per strategia in update_portfolio.py."""
 
-from update_portfolio import classify_label, aggregate_by_strategy, strategy_table
+import subprocess
+
+from update_portfolio import (
+    ANON_EMAIL,
+    ANON_NAME,
+    aggregate_by_strategy,
+    classify_label,
+    ensure_anonymous_identity,
+    strategy_table,
+)
+
+
+# ─── ensure_anonymous_identity ──────────────────────────────────────────────────
+
+def test_ensure_anonymous_identity_sets_local_git_config(tmp_path):
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    subprocess.run(["git", "-C", str(repo), "init"], check=True,
+                   capture_output=True)
+    ensure_anonymous_identity(str(repo))
+    email = subprocess.run(["git", "-C", str(repo), "config", "user.email"],
+                           capture_output=True, text=True).stdout.strip()
+    name = subprocess.run(["git", "-C", str(repo), "config", "user.name"],
+                          capture_output=True, text=True).stdout.strip()
+    assert email == ANON_EMAIL
+    assert name == ANON_NAME
 
 
 # ─── classify_label ────────────────────────────────────────────────────────────

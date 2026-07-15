@@ -179,8 +179,21 @@ def generate_markdown(data: dict) -> str:
 """
 
 
+# Identità git anonima: l'email personale non deve comparire nella history pubblica
+ANON_NAME = "corr1986"
+ANON_EMAIL = "corr1986@users.noreply.github.com"
+
+
+def ensure_anonymous_identity(repo_path: str) -> None:
+    """Forza nome/email anonimi nella config locale del repo (idempotente)."""
+    for key, value in (("user.name", ANON_NAME), ("user.email", ANON_EMAIL)):
+        subprocess.run(["git", "-C", repo_path, "config", key, value],
+                       check=True, capture_output=True)
+
+
 def git_push(repo_path: str, message: str) -> bool:
     try:
+        ensure_anonymous_identity(repo_path)
         subprocess.run(["git", "-C", repo_path, "add", MD_FILENAME, JSON_FILENAME],
                        check=True, capture_output=True)
         result = subprocess.run(["git", "-C", repo_path, "commit", "-m", message],
