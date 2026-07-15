@@ -3,18 +3,27 @@
 TCO_URL_LEN = 23  # X riscrive ogni URL come t.co, lunghezza fissa
 
 
+# range di codepoint che X pesa 1; tutto il resto (emoji compresi) pesa 2
+_LIGHT_RANGES = ((0, 4351), (8192, 8205), (8208, 8223), (8242, 8247))
+
+
+def _char_weight(ch: str) -> int:
+    cp = ord(ch)
+    return 1 if any(lo <= cp <= hi for lo, hi in _LIGHT_RANGES) else 2
+
+
 def effective_length(text: str) -> int:
-    """Lunghezza come la conta X: ogni URL vale TCO_URL_LEN."""
-    return len(text) - _urls_extra_chars(text)
-
-
-def _urls_extra_chars(text: str) -> int:
-    """Caratteri risparmiati contando le URL come t.co."""
-    saved = 0
-    for token in text.replace("\n", " ").split(" "):
-        if token.startswith("http://") or token.startswith("https://"):
-            saved += max(0, len(token) - TCO_URL_LEN)
-    return saved
+    """Lunghezza come la conta X: URL = TCO_URL_LEN, caratteri pesati."""
+    total = 0
+    for line in text.split("\n"):
+        for token in line.split(" "):
+            if token.startswith("http://") or token.startswith("https://"):
+                total += TCO_URL_LEN
+            else:
+                total += sum(_char_weight(c) for c in token)
+    # spazi e newline pesano 1 ciascuno
+    total += text.count(" ") + text.count("\n")
+    return total
 
 
 def compose_weekly_post(week: dict, account: dict, dd_30d: float,

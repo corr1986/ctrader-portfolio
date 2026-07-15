@@ -34,3 +34,11 @@ def test_effective_length_counts_urls_as_23():
     # una URL lunga conta come 23 (t.co), il resto carattere per carattere
     text = "abc " + COPY_URL
     assert effective_length(text) == 4 + TCO_URL_LEN
+
+
+def test_effective_length_counts_emoji_as_2():
+    # X pesa 2 i caratteri fuori dai range "leggeri" (emoji inclusi)
+    assert effective_length("ab📊") == 4
+    assert effective_length("✅") == 2
+    # ma lettere accentate e trattini lunghi restano 1
+    assert effective_length("è—") == 2
