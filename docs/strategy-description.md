@@ -3,7 +3,23 @@
 > Pronta da incollare. Versione EN (consigliata: il pubblico copy è globale) e IT.
 > Aggiornata: 2026-07-15.
 
-## Versione EN (da incollare)
+## Versione EN corta — 940 caratteri, per il limite di 1024 della pagina copy (INCOLLATA IL 15/07/2026)
+
+```
+XybridFX — Two engines, one account. Real money, fully automated, verifiable.
+
+1) Swing engine: selective entries on majors and crosses, every trade with defined SL and TP. Low frequency, risk-first.
+
+2) Grid engine: mean-reversion basket on 10 FX pairs, triggered only at Daily RSI extremes (30/70). Banks profit in +2% equity cycles, protected by dynamic grid spacing, single-position profit taking at +100 pips, automated recovery below -10% and a hard equity stop at -20%.
+
+Before you copy (honesty first): grid positions carry no individual stop loss — floating drawdown is part of the system. If you cannot tolerate temporary equity swings of 10-20%, do not copy. Micro volumes, no overleveraging.
+
+Full account state published hourly on GitHub. Independently verified on Myfxbook: https://www.myfxbook.com/members/corr1986/xybridfx/12050062
+
+Past performance does not guarantee future results. Copy only money you can afford to risk.
+```
+
+## Versione EN estesa (riferimento)
 
 **XybridFX — Two engines, one account. Real money, fully automated, verifiable.**
 
