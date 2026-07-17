@@ -27,8 +27,8 @@ MAX_SNAPSHOT_AGE_HOURS = 24
 # Community X a rotazione settimanale (mai lo stesso post in più community:
 # X penalizza i duplicati). Iscrizioni fatte il 17/07/2026.
 COMMUNITIES = [
-    ("FOREX TRADING (43k)", "https://x.com/i/communities/1593968992296787970"),
     ("Future Traders (9k)", "https://x.com/i/communities/1884247281366618267"),
+    ("FOREX TRADING (43k)", "https://x.com/i/communities/1593968992296787970"),
     ("X Forex Trading (8k)", "https://x.com/i/communities/1735157404684128669"),
     ("Investing Forex/Crypto (7k)", "https://x.com/i/communities/1744219889718407196"),
 ]
