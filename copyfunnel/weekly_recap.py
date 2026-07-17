@@ -24,6 +24,21 @@ from copyfunnel.stats import account_stats, window_stats
 COPY_URL = "https://ct.spotware.com/copy/strategy/115617"
 MAX_SNAPSHOT_AGE_HOURS = 24
 
+# Community X a rotazione settimanale (mai lo stesso post in più community:
+# X penalizza i duplicati). Iscrizioni fatte il 17/07/2026.
+COMMUNITIES = [
+    ("FOREX TRADING (43k)", "https://x.com/i/communities/1593968992296787970"),
+    ("Future Traders (9k)", "https://x.com/i/communities/1884247281366618267"),
+    ("X Forex Trading (8k)", "https://x.com/i/communities/1735157404684128669"),
+    ("Investing Forex/Crypto (7k)", "https://x.com/i/communities/1744219889718407196"),
+]
+
+
+def community_della_settimana(giorno) -> tuple:
+    """(nome, url) della community dove postare il recap questa settimana."""
+    settimana = giorno.isocalendar()[1]
+    return COMMUNITIES[settimana % len(COMMUNITIES)]
+
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Recap settimanale XybridFX")
@@ -118,9 +133,15 @@ def invia_telegram(repo: str, image_paths: list, text: str) -> str:
     if not token or not chat:
         return ("✗ TELEGRAM_TOKEN/TELEGRAM_CHAT_ID mancanti in copyfunnel/.env")
 
+    from datetime import date
+    nome_com, url_com = community_della_settimana(date.today())
     caption = ("RECAP SETTIMANALE per X — pubblica manualmente:\n"
-               "1. salva le immagini  2. copia il testo qui sotto  "
-               "3. nuovo post su x.com con entrambe le immagini + testo\n\n"
+               "1. salva le immagini  2. copia il testo qui sotto\n"
+               "3. nuovo post su x.com con entrambe le immagini + testo\n"
+               f"4. COMMUNITY della settimana: {nome_com}\n"
+               f"   {url_com}\n"
+               "   (nel composer scegli la community dal menu in alto, "
+               "al posto di 'Chiunque')\n\n"
                "— TESTO da copiare —\n" + text)
     url = f"https://api.telegram.org/bot{token}/sendMediaGroup"
     media = [{"type": "photo", "media": f"attach://img{i}",
