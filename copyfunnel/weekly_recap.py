@@ -64,11 +64,12 @@ def main() -> int:
                         start=now - timedelta(days=args.days), end=now)
     account = account_stats(snapshot)
 
-    rows_30d = [r for r in rows
-                if datetime.fromisoformat(r["timestamp"]) >= now - timedelta(days=30)]
+    # il grafico copre la stessa finestra del recap (default: la settimana)
+    rows_week = [r for r in rows
+                 if datetime.fromisoformat(r["timestamp"]) >= now - timedelta(days=args.days)]
 
     image_path = os.path.join(out_dir, "recap.png")
-    render_recap(rows_30d, week, account, image_path)
+    render_recap(rows_week, week, account, image_path)
     text = compose_weekly_post(week, account,
                                None if args.no_link else COPY_URL)
 
