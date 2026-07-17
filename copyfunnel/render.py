@@ -67,3 +67,50 @@ def render_recap(rows: list, week: dict, account: dict,
     fig.tight_layout(rect=(0, 0.03, 1, 1))
     fig.savefig(out_path, facecolor=BG, bbox_inches="tight")
     plt.close(fig)
+
+
+def render_trades(trades: list, currency: str, out_path: str,
+                  title: str = "XybridFX — Closed Trades") -> None:
+    """Tabella 'ricevute': i trade chiusi della settimana, P&L colorato."""
+    cur = "€" if currency == "EUR" else currency
+    n = max(len(trades), 1)
+    fig_h = 1.8 + 0.52 * n
+    fig, ax = plt.subplots(figsize=(10, fig_h), facecolor=BG, dpi=150)
+    ax.set_facecolor(BG)
+    ax.axis("off")
+    ax.set_title(title, color=FG, fontsize=15, fontweight="bold", pad=16)
+
+    intestazioni = ["Date", "Pair", "Side", "Lots", "Pips", "P&L"]
+    xs = [0.06, 0.26, 0.44, 0.58, 0.72, 0.90]
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, n + 1.3)
+
+    for x, h in zip(xs, intestazioni):
+        ax.text(x, n + 0.8, h, color="#8b949e", fontsize=11,
+                fontweight="bold", ha="center")
+    ax.plot([0.02, 0.98], [n + 0.45, n + 0.45], color=GRID, linewidth=1)
+
+    if not trades:
+        ax.text(0.5, n / 2, "No trades closed this week",
+                color="#8b949e", fontsize=13, ha="center")
+    for i, t in enumerate(trades):
+        y = n - i - 0.15
+        if i % 2 == 0:
+            ax.axhspan(y - 0.38, y + 0.42, color="#111823", zorder=0)
+        pnl = t["pnl"]
+        colore = ACCENT if pnl >= 0 else ACCENT_NEG
+        data = datetime.fromisoformat(t["close_time"]).strftime("%d %b")
+        valori = [
+            (data, FG), (t["symbol"], FG), (t["direction"], FG),
+            (f"{float(t['lots']):.2f}", FG),
+            (f"{float(t.get('pips', 0)):+.0f}", colore),
+            (f"{'+' if pnl >= 0 else ''}{cur}{pnl:.2f}", colore),
+        ]
+        for x, (v, c) in zip(xs, valori):
+            ax.text(x, y, v, color=c, fontsize=12, ha="center",
+                    fontweight="bold" if x == xs[-1] else "normal")
+
+    fig.text(0.5, 0.02, "Real account · every trade published · past ≠ future",
+             color="#8b949e", fontsize=8.5, ha="center")
+    fig.savefig(out_path, facecolor=BG, bbox_inches="tight")
+    plt.close(fig)

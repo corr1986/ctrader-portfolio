@@ -33,7 +33,7 @@ def weekly_pct(week: dict, account: dict) -> float:
 
 
 def compose_weekly_post(week: dict, account: dict,
-                        copy_url: str = None) -> str:
+                        copy_url: str = None, symbols: list = None) -> str:
     """Recap settimanale: numeri veri, anche negativi.
 
     copy_url=None → modalità documentazione (fase rossa): nessun link,
@@ -52,9 +52,17 @@ def compose_weekly_post(week: dict, account: dict,
         f"Equity: {cur}{account['equity']:,.0f}",
         "",
     ]
+    # cashtag delle coppie tradate (ricerca nativa finanza su X), max 4
+    visti = []
+    for s in symbols or []:
+        if s not in visti:
+            visti.append(s)
+    cashtags = " ".join(f"${s}" for s in visti[:4])
+    coda = (cashtags + " #forex").strip()
+
     if copy_url:
-        lines += [f"Copy it on cTrader: {copy_url}", "", "#forex #copytrading"]
+        lines += [f"Copy it on cTrader: {copy_url}", "", coda]
     else:
         lines += ["Documenting every week — reds included. No hype, just the process.",
-                  "", "#forex #trading"]
+                  "", coda]
     return "\n".join(lines)

@@ -23,6 +23,19 @@ def test_render_creates_png(tmp_path):
     assert os.path.getsize(out) > 1000
 
 
+def test_render_trades_table_creates_png(tmp_path):
+    from copyfunnel.render import render_trades
+    trades = [
+        {"close_time": "2026-07-14T10:00:00", "symbol": "EURUSD",
+         "direction": "Sell", "lots": 0.01, "pnl": 6.15, "pips": 120.0},
+        {"close_time": "2026-07-15T15:30:00", "symbol": "GBPCHF",
+         "direction": "Buy", "lots": 0.02, "pnl": -4.65, "pips": -35.2},
+    ]
+    out = tmp_path / "trades.png"
+    render_trades(trades, "EUR", str(out))
+    assert out.exists() and os.path.getsize(out) > 1000
+
+
 def test_post_dry_run_writes_preview_and_does_not_need_keys(tmp_path):
     preview = tmp_path / "preview.txt"
     result = post("hello world", image_path=None, dry_run=True,

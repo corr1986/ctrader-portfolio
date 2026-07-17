@@ -48,6 +48,14 @@ def test_post_senza_link_in_modalita_documentazione():
     assert effective_length(text) <= 280
 
 
+def test_cashtag_delle_coppie_tradate():
+    text = compose_weekly_post(WEEK, ACCOUNT, copy_url=None,
+                               symbols=["EURUSD", "GBPCHF", "EURUSD"])
+    assert "$EURUSD" in text and "$GBPCHF" in text
+    assert text.count("$EURUSD") == 1      # niente duplicati
+    assert effective_length(text) <= 280
+
+
 def test_effective_length_counts_emoji_as_2():
     # X pesa 2 i caratteri fuori dai range "leggeri" (emoji inclusi)
     assert effective_length("ab📊") == 4

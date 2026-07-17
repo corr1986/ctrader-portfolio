@@ -18,7 +18,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from copyfunnel.compose import compose_weekly_post, effective_length
 from copyfunnel.history import build_history
 from copyfunnel.post_x import post
-from copyfunnel.render import render_recap
+from copyfunnel.render import render_recap, render_trades
 from copyfunnel.stats import account_stats, window_stats
 
 COPY_URL = "https://ct.spotware.com/copy/strategy/115617"
@@ -64,21 +64,32 @@ def main() -> int:
                         start=now - timedelta(days=args.days), end=now)
     account = account_stats(snapshot)
 
+    # trade chiusi nella finestra: tabella "ricevute" + cashtag delle coppie
+    trades_week = sorted(
+        [t for t in snapshot.get("history", [])
+         if now - timedelta(days=args.days)
+         <= datetime.fromisoformat(t["close_time"]) <= now],
+        key=lambda t: t["close_time"])
+    symbols = [t["symbol"] for t in trades_week]
+
     # il grafico copre la stessa finestra del recap (default: la settimana)
     rows_week = [r for r in rows
                  if datetime.fromisoformat(r["timestamp"]) >= now - timedelta(days=args.days)]
 
     image_path = os.path.join(out_dir, "recap.png")
     render_recap(rows_week, week, account, image_path)
+    trades_path = os.path.join(out_dir, "trades.png")
+    render_trades(trades_week, account["currency"], trades_path)
     text = compose_weekly_post(week, account,
-                               None if args.no_link else COPY_URL)
+                               None if args.no_link else COPY_URL,
+                               symbols=symbols)
 
     print(f"\n─── Testo del post ({effective_length(text)}/280) ───")
     print(text)
-    print(f"─── Immagine: {image_path} ───\n")
+    print(f"─── Immagini: {image_path} + {trades_path} ───\n")
 
     if args.telegram:
-        esito = invia_telegram(repo, image_path, text)
+        esito = invia_telegram(repo, [image_path, trades_path], text)
         print(esito)
         return 0
 
@@ -93,8 +104,8 @@ def main() -> int:
     return 0
 
 
-def invia_telegram(repo: str, image_path: str, text: str) -> str:
-    """Manda immagine + testo del recap su Telegram (pubblicazione manuale su X)."""
+def invia_telegram(repo: str, image_paths: list, text: str) -> str:
+    """Manda le immagini + testo del recap su Telegram (pubblicazione manuale su X)."""
     import time
 
     import requests
@@ -108,17 +119,25 @@ def invia_telegram(repo: str, image_path: str, text: str) -> str:
         return ("✗ TELEGRAM_TOKEN/TELEGRAM_CHAT_ID mancanti in copyfunnel/.env")
 
     caption = ("RECAP SETTIMANALE per X — pubblica manualmente:\n"
-               "1. salva l'immagine  2. copia il testo qui sotto  "
-               "3. nuovo post su x.com con immagine + testo\n\n"
+               "1. salva le immagini  2. copia il testo qui sotto  "
+               "3. nuovo post su x.com con entrambe le immagini + testo\n\n"
                "— TESTO da copiare —\n" + text)
-    url = f"https://api.telegram.org/bot{token}/sendPhoto"
+    url = f"https://api.telegram.org/bot{token}/sendMediaGroup"
+    media = [{"type": "photo", "media": f"attach://img{i}",
+              **({"caption": caption} if i == 0 else {})}
+             for i in range(len(image_paths))]
     for tentativo in range(3):
         try:
-            with open(image_path, "rb") as f:
-                r = requests.post(url, data={"chat_id": chat, "caption": caption},
-                                  files={"photo": f}, timeout=90)
+            files = {f"img{i}": open(p, "rb") for i, p in enumerate(image_paths)}
+            try:
+                r = requests.post(url, data={"chat_id": chat,
+                                             "media": json.dumps(media)},
+                                  files=files, timeout=120)
+            finally:
+                for f in files.values():
+                    f.close()
             r.raise_for_status()
-            return "✓ Recap inviato su Telegram"
+            return "✓ Recap inviato su Telegram (2 immagini)"
         except Exception as e:
             ultimo = e
             time.sleep(3)
