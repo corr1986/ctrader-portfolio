@@ -26,7 +26,13 @@ def effective_length(text: str) -> int:
     return total
 
 
-def compose_weekly_post(week: dict, account: dict, dd_30d: float,
+def weekly_pct(week: dict, account: dict) -> float:
+    """% della settimana sul saldo di inizio settimana (saldo attuale - P&L)."""
+    base = account["balance"] - week["net_pnl"]
+    return week["net_pnl"] / base * 100 if base else 0.0
+
+
+def compose_weekly_post(week: dict, account: dict,
                         copy_url: str = None) -> str:
     """Recap settimanale: numeri veri, anche negativi.
 
@@ -35,14 +41,15 @@ def compose_weekly_post(week: dict, account: dict, dd_30d: float,
     """
     cur = "€" if account.get("currency", "EUR") == "EUR" else account["currency"]
     sign = "+" if week["net_pnl"] >= 0 else ""
+    pct = weekly_pct(week, account)
+    pct_sign = "+" if pct >= 0 else ""
     lines = [
         "Weekly recap — real account, 100% automated 🤖",
         "",
-        f"📊 Closed P&L: {sign}{cur}{week['net_pnl']:.2f} "
-        f"({week['trades']} trades, {week['win_rate']:.0f}% win)",
-        f"💼 Equity: {cur}{account['equity']:,.0f} | "
-        f"Floating: {'+' if account['floating'] >= 0 else ''}{cur}{account['floating']:.0f}",
-        f"📉 Max DD 30d: {dd_30d:.1f}%",
+        f"📊 Week: {sign}{cur}{week['net_pnl']:.2f} ({pct_sign}{pct:.2f}%) | "
+        f"{week['trades']} trades, {week['win_rate']:.0f}% win",
+        f"💼 Balance: {cur}{account['balance']:,.0f} | "
+        f"Equity: {cur}{account['equity']:,.0f}",
         "",
     ]
     if copy_url:

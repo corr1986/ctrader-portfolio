@@ -19,7 +19,7 @@ from copyfunnel.compose import compose_weekly_post, effective_length
 from copyfunnel.history import build_history
 from copyfunnel.post_x import post
 from copyfunnel.render import render_recap
-from copyfunnel.stats import account_stats, max_drawdown, window_stats
+from copyfunnel.stats import account_stats, window_stats
 
 COPY_URL = "https://ct.spotware.com/copy/strategy/115617"
 MAX_SNAPSHOT_AGE_HOURS = 24
@@ -66,11 +66,10 @@ def main() -> int:
 
     rows_30d = [r for r in rows
                 if datetime.fromisoformat(r["timestamp"]) >= now - timedelta(days=30)]
-    dd_30d = max_drawdown([r["equity"] for r in rows_30d])
 
     image_path = os.path.join(out_dir, "recap.png")
-    render_recap(rows_30d, week, account, dd_30d, image_path)
-    text = compose_weekly_post(week, account, dd_30d,
+    render_recap(rows_30d, week, account, image_path)
+    text = compose_weekly_post(week, account,
                                None if args.no_link else COPY_URL)
 
     print(f"\n─── Testo del post ({effective_length(text)}/280) ───")

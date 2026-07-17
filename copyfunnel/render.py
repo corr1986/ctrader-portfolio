@@ -13,7 +13,7 @@ ACCENT_NEG = "#f85149"
 GRID = "#21262d"
 
 
-def render_recap(rows: list, week: dict, account: dict, dd_30d: float,
+def render_recap(rows: list, week: dict, account: dict,
                  out_path: str, title: str = "XybridFX — Weekly Recap") -> None:
     """Genera il PNG del recap dai punti equity e dalle statistiche."""
     times = [datetime.fromisoformat(r["timestamp"]) for r in rows]
@@ -41,13 +41,17 @@ def render_recap(rows: list, week: dict, account: dict, dd_30d: float,
 
     ax_stats.set_facecolor(BG)
     ax_stats.axis("off")
+    from copyfunnel.compose import weekly_pct
+
     pnl_color = ACCENT if week["net_pnl"] >= 0 else ACCENT_NEG
     sign = "+" if week["net_pnl"] >= 0 else ""
+    pct = weekly_pct(week, account)
+    pct_sign = "+" if pct >= 0 else ""
     cells = [
-        (f"{sign}{cur}{week['net_pnl']:.2f}", "Closed P&L (7d)", pnl_color),
-        (f"{week['trades']} / {week['win_rate']:.0f}%", "Trades / Win (7d)", FG),
-        (f"{cur}{account['equity']:,.0f}", "Equity", FG),
-        (f"{dd_30d:.1f}%", "Max DD (30d)", ACCENT_NEG if dd_30d > 15 else FG),
+        (f"{sign}{cur}{week['net_pnl']:.2f}", "Week P&L", pnl_color),
+        (f"{pct_sign}{pct:.2f}%", "Week %", pnl_color),
+        (f"{cur}{account['balance']:,.0f}", "Balance", FG),
+        (f"{week['trades']} / {week['win_rate']:.0f}%", "Trades / Win", FG),
     ]
     for i, (value, label, color) in enumerate(cells):
         x = 0.125 + i * 0.25

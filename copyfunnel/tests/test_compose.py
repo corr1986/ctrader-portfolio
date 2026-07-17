@@ -11,22 +11,26 @@ ACCOUNT = {"balance": 3267.23, "equity": 3347.21, "floating": 79.98,
 
 
 def test_post_contains_key_numbers_and_url():
-    text = compose_weekly_post(WEEK, ACCOUNT, dd_30d=8.2, copy_url=COPY_URL)
+    text = compose_weekly_post(WEEK, ACCOUNT, copy_url=COPY_URL)
     assert COPY_URL in text
     assert "23.40" in text
     assert "12" in text          # numero trade
     assert "75" in text          # win rate settimana
-    assert "8.2" in text         # drawdown
+    assert "3,267" in text       # saldo del conto
+    # % settimanale: 23.40 / (3267.23 - 23.40) * 100 = +0.72%
+    assert "+0.72%" in text
+    assert "DD" not in text      # drawdown rimosso su richiesta
 
 def test_post_within_280_chars_with_tco_url():
-    text = compose_weekly_post(WEEK, ACCOUNT, dd_30d=8.2, copy_url=COPY_URL)
+    text = compose_weekly_post(WEEK, ACCOUNT, copy_url=COPY_URL)
     assert effective_length(text) <= 280
 
 
 def test_negative_week_is_stated_plainly():
     week = dict(WEEK, net_pnl=-31.75, wins=4, losses=8, win_rate=33.3)
-    text = compose_weekly_post(week, ACCOUNT, dd_30d=12.5, copy_url=COPY_URL)
+    text = compose_weekly_post(week, ACCOUNT, copy_url=COPY_URL)
     assert "-31.75" in text
+    assert "-0.96%" in text      # percentuale negativa esplicita
     assert effective_length(text) <= 280
 
 
@@ -38,7 +42,7 @@ def test_effective_length_counts_urls_as_23():
 
 def test_post_senza_link_in_modalita_documentazione():
     # copy_url=None → fase rossa: si documenta senza promuovere
-    text = compose_weekly_post(WEEK, ACCOUNT, dd_30d=8.2, copy_url=None)
+    text = compose_weekly_post(WEEK, ACCOUNT, copy_url=None)
     assert "ct.spotware.com" not in text
     assert "Documenting" in text
     assert effective_length(text) <= 280

@@ -18,7 +18,7 @@ ACCOUNT = {"balance": 3267.23, "equity": 3347.21, "floating": 79.98,
 
 def test_render_creates_png(tmp_path):
     out = tmp_path / "recap.png"
-    render_recap(ROWS, WEEK, ACCOUNT, dd_30d=8.2, out_path=str(out))
+    render_recap(ROWS, WEEK, ACCOUNT, out_path=str(out))
     assert out.exists()
     assert os.path.getsize(out) > 1000
 
