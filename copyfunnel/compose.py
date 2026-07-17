@@ -27,8 +27,12 @@ def effective_length(text: str) -> int:
 
 
 def compose_weekly_post(week: dict, account: dict, dd_30d: float,
-                        copy_url: str) -> str:
-    """Recap settimanale: numeri veri, anche negativi, più link alla pagina copy."""
+                        copy_url: str = None) -> str:
+    """Recap settimanale: numeri veri, anche negativi.
+
+    copy_url=None → modalità documentazione (fase rossa): nessun link,
+    si costruisce lo storico senza promuovere.
+    """
     cur = "€" if account.get("currency", "EUR") == "EUR" else account["currency"]
     sign = "+" if week["net_pnl"] >= 0 else ""
     lines = [
@@ -40,8 +44,10 @@ def compose_weekly_post(week: dict, account: dict, dd_30d: float,
         f"Floating: {'+' if account['floating'] >= 0 else ''}{cur}{account['floating']:.0f}",
         f"📉 Max DD 30d: {dd_30d:.1f}%",
         "",
-        f"Copy it on cTrader: {copy_url}",
-        "",
-        "#forex #copytrading",
     ]
+    if copy_url:
+        lines += [f"Copy it on cTrader: {copy_url}", "", "#forex #copytrading"]
+    else:
+        lines += ["Documenting every week — reds included. No hype, just the process.",
+                  "", "#forex #trading"]
     return "\n".join(lines)

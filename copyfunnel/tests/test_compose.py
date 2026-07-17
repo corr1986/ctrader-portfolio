@@ -36,6 +36,14 @@ def test_effective_length_counts_urls_as_23():
     assert effective_length(text) == 4 + TCO_URL_LEN
 
 
+def test_post_senza_link_in_modalita_documentazione():
+    # copy_url=None → fase rossa: si documenta senza promuovere
+    text = compose_weekly_post(WEEK, ACCOUNT, dd_30d=8.2, copy_url=None)
+    assert "ct.spotware.com" not in text
+    assert "Documenting" in text
+    assert effective_length(text) <= 280
+
+
 def test_effective_length_counts_emoji_as_2():
     # X pesa 2 i caratteri fuori dai range "leggeri" (emoji inclusi)
     assert effective_length("ab📊") == 4
