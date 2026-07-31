@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 31/07/2026 22:26 UTC*
+*Aggiornato: 31/07/2026 22:56 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -8,8 +8,8 @@
 ## Riepilogo
 | Voce | Valore |
 |---|---|
-| Balance | 10004.24 EUR |
-| Equity | 10042.09 EUR |
+| Balance | 10000.00 EUR |
+| Equity | 10037.85 EUR |
 | P&L non realizzato | +37.85 EUR |
 | P&L realizzato totale | -27.29 EUR |
 | Posizioni aperte | 12 |
