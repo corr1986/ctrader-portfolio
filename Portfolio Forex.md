@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 08/08/2026 07:46 UTC*
+*Aggiornato: 08/08/2026 08:16 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -32,6 +32,12 @@
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
+| EURUSD | Sell | 0.02 | 1.15482 | 1.15589 | -1.56 EUR | -10.7 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| USDJPY | Buy | 0.02 | 157.89800 | 157.76600 | -1.35 EUR | -13.2 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.04 | 1.20000 | 1.19903 | +1.71 EUR | 9.7 | 1.23000 | 1.18000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.02 | 1.19584 | 1.19903 | -3.54 EUR | -31.9 | 1.22500 | 1.15000 | TRFX_EXTRA |
+| USDJPY | Buy | 0.03 | 157.18600 | 157.76600 | +9.54 EUR | 58.0 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.02 | 1.14784 | 1.15589 | -13.32 EUR | -80.5 | 1.22000 | 1.05000 | TRFX_SIGNALS |
 | CADCHF | Buy | 0.01 | 0.57146 | 0.57929 | +9.65 EUR | 78.3 | — | — | TRFX_EXTRA_003 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.57929 | +9.66 EUR | 78.4 | — | — | TRFX_EXTRA_004 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.57929 | +9.66 EUR | 78.4 | — | — | TRFX_EXTRA_006 |
@@ -42,12 +48,6 @@
 | CADCHF | Buy | 0.01 | 0.57146 | 0.57929 | +9.65 EUR | 78.3 | — | — | TRFX_EXTRA_009 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.57929 | +9.66 EUR | 78.4 | — | — | TRFX_EXTRA_001 |
 | CADCHF | Buy | 0.01 | 0.57146 | 0.57929 | +9.65 EUR | 78.3 | — | — | TRFX_EXTRA_002 |
-| EURUSD | Sell | 0.02 | 1.14784 | 1.15589 | -13.32 EUR | -80.5 | 1.22000 | 1.05000 | TRFX_SIGNALS |
-| AUDNZD | Sell | 0.02 | 1.19584 | 1.19903 | -3.54 EUR | -31.9 | 1.22500 | 1.15000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.02 | 1.15482 | 1.15589 | -1.56 EUR | -10.7 | 1.22000 | 1.05000 | TRFX_SIGNALS |
-| AUDNZD | Sell | 0.04 | 1.20000 | 1.19903 | +1.71 EUR | 9.7 | 1.23000 | 1.18000 | TRFX_EXTRA |
-| USDJPY | Buy | 0.02 | 157.89800 | 157.76600 | -1.35 EUR | -13.2 | — | — | GridMartDailyFinalFixed |
-| USDJPY | Buy | 0.03 | 157.18600 | 157.76600 | +9.54 EUR | 58.0 | — | — | GridMartDailyFinalFixed |
 
 ---
 
