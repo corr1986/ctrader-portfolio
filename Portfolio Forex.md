@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 08/08/2026 05:16 UTC*
+*Aggiornato: 08/08/2026 05:46 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -45,9 +45,9 @@
 | EURUSD | Sell | 0.02 | 1.14784 | 1.15589 | -13.32 EUR | -80.5 | 1.22000 | 1.05000 | TRFX_SIGNALS |
 | AUDNZD | Sell | 0.02 | 1.19584 | 1.19903 | -3.54 EUR | -31.9 | 1.22500 | 1.15000 | TRFX_EXTRA |
 | EURUSD | Sell | 0.02 | 1.15482 | 1.15589 | -1.56 EUR | -10.7 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| AUDNZD | Sell | 0.04 | 1.20000 | 1.19903 | +1.71 EUR | 9.7 | 1.23000 | 1.18000 | TRFX_EXTRA |
 | USDJPY | Buy | 0.02 | 157.89800 | 157.76600 | -1.35 EUR | -13.2 | — | — | GridMartDailyFinalFixed |
 | USDJPY | Buy | 0.03 | 157.18600 | 157.76600 | +9.54 EUR | 58.0 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.04 | 1.20000 | 1.19903 | +1.71 EUR | 9.7 | 1.23000 | 1.18000 | TRFX_EXTRA |
 
 ---
 
