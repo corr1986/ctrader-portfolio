@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 13/08/2026 17:18 UTC*
+*Aggiornato: 13/08/2026 17:48 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 10065.29 EUR |
-| Equity | 10223.33 EUR |
-| P&L non realizzato | +158.04 EUR |
+| Equity | 10225.69 EUR |
+| P&L non realizzato | +160.40 EUR |
 | P&L realizzato totale | +20.01 EUR |
 | Posizioni aperte | 18 |
 | Trade chiusi totali | 102 (78W / 24L) |
@@ -22,34 +22,34 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| GridMartingala | 2 | +56.50 EUR | +0.56% |
-| TRFX Extra | 4 | -23.40 EUR | -0.23% |
-| TRFX Signal | 12 | +124.94 EUR | +1.24% |
-| **Totale** | **18** | **+158.04 EUR** | **+1.57%** |
+| GridMartingala | 2 | +57.09 EUR | +0.57% |
+| TRFX Extra | 4 | -22.89 EUR | -0.23% |
+| TRFX Signal | 12 | +126.20 EUR | +1.25% |
+| **Totale** | **18** | **+160.40 EUR** | **+1.59%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| USDJPY | Buy | 0.02 | 157.89800 | 159.49800 | +18.01 EUR | 160.0 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.04 | 1.20000 | 1.20709 | -15.00 EUR | -70.9 | 1.23000 | 1.18000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.02 | 1.19584 | 1.20709 | -11.86 EUR | -112.5 | 1.22500 | 1.15000 | TRFX_EXTRA |
-| USDJPY | Buy | 0.03 | 157.18600 | 159.49800 | +38.49 EUR | 231.2 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.02 | 1.14784 | 1.15279 | -7.59 EUR | -49.5 | 1.22000 | 1.05000 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.01 | 0.57146 | 0.58378 | +14.52 EUR | 123.2 | — | — | TRFX_EXTRA_003 |
-| CADCHF | Buy | 0.01 | 0.57145 | 0.58378 | +14.53 EUR | 123.3 | — | — | TRFX_EXTRA_004 |
-| CADCHF | Buy | 0.01 | 0.57145 | 0.58378 | +14.53 EUR | 123.3 | — | — | TRFX_EXTRA_006 |
-| CADCHF | Buy | 0.01 | 0.57145 | 0.58378 | +14.53 EUR | 123.3 | — | — | TRFX_EXTRA_005 |
-| CADCHF | Buy | 0.01 | 0.57146 | 0.58378 | +14.52 EUR | 123.2 | — | — | TRFX_EXTRA_007 |
-| CADCHF | Buy | 0.01 | 0.57146 | 0.58378 | +14.52 EUR | 123.2 | — | — | TRFX_EXTRA_008 |
-| CADCHF | Buy | 0.01 | 0.57146 | 0.58378 | +14.52 EUR | 123.2 | — | — | TRFX_EXTRA_009 |
-| CADCHF | Buy | 0.01 | 0.57145 | 0.58378 | +14.53 EUR | 123.3 | — | — | TRFX_EXTRA_001 |
-| CADCHF | Buy | 0.01 | 0.57146 | 0.58378 | +14.52 EUR | 123.2 | — | — | TRFX_EXTRA_002 |
+| USDJPY | Buy | 0.02 | 157.89800 | 159.52000 | +18.25 EUR | 162.2 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.04 | 1.20000 | 1.20699 | -14.79 EUR | -69.9 | 1.23000 | 1.18000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.02 | 1.19584 | 1.20699 | -11.76 EUR | -111.5 | 1.22500 | 1.15000 | TRFX_EXTRA |
+| USDJPY | Buy | 0.03 | 157.18600 | 159.52000 | +38.84 EUR | 233.4 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.02 | 1.14784 | 1.15287 | -7.73 EUR | -50.3 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.01 | 0.57146 | 0.58391 | +14.66 EUR | 124.5 | — | — | TRFX_EXTRA_003 |
+| CADCHF | Buy | 0.01 | 0.57145 | 0.58391 | +14.67 EUR | 124.6 | — | — | TRFX_EXTRA_004 |
+| CADCHF | Buy | 0.01 | 0.57145 | 0.58391 | +14.67 EUR | 124.6 | — | — | TRFX_EXTRA_006 |
+| CADCHF | Buy | 0.01 | 0.57145 | 0.58391 | +14.67 EUR | 124.6 | — | — | TRFX_EXTRA_005 |
+| CADCHF | Buy | 0.01 | 0.57146 | 0.58391 | +14.66 EUR | 124.5 | — | — | TRFX_EXTRA_007 |
+| CADCHF | Buy | 0.01 | 0.57146 | 0.58391 | +14.66 EUR | 124.5 | — | — | TRFX_EXTRA_008 |
+| CADCHF | Buy | 0.01 | 0.57146 | 0.58391 | +14.66 EUR | 124.5 | — | — | TRFX_EXTRA_009 |
+| CADCHF | Buy | 0.01 | 0.57145 | 0.58391 | +14.67 EUR | 124.6 | — | — | TRFX_EXTRA_001 |
+| CADCHF | Buy | 0.01 | 0.57146 | 0.58391 | +14.66 EUR | 124.5 | — | — | TRFX_EXTRA_002 |
 | GBPUSD | Sell | 0.04 | 1.34850 | 1.34833 | +0.39 EUR | 1.7 | 1.37200 | 1.32000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.04 | 1.20870 | 1.20709 | +3.07 EUR | 16.1 | 1.23500 | 1.15000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.02 | 1.15257 | 1.15279 | -0.48 EUR | -2.2 | 1.22000 | 1.05000 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.02 | 0.58266 | 0.58378 | +2.29 EUR | 11.2 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| AUDNZD | Sell | 0.04 | 1.20870 | 1.20699 | +3.27 EUR | 17.1 | 1.23500 | 1.15000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.02 | 1.15257 | 1.15287 | -0.62 EUR | -3.0 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.58266 | 0.58391 | +2.57 EUR | 12.5 | 0.55000 | 0.63100 | TRFX_SIGNALS |
 
 ---
 
