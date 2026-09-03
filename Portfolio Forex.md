@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 03/09/2026 00:02 UTC*
+*Aggiornato: 03/09/2026 00:32 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 10099.42 EUR |
-| Equity | 10134.00 EUR |
-| P&L non realizzato | +34.58 EUR |
+| Equity | 10131.12 EUR |
+| P&L non realizzato | +31.70 EUR |
 | P&L realizzato totale | +311.32 EUR |
 | Posizioni aperte | 21 |
 | Trade chiusi totali | 135 (102W / 33L) |
@@ -22,18 +22,18 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| GridMartingala | 3 | -5.57 EUR | -0.06% |
-| TRFX Extra | 6 | -117.81 EUR | -1.17% |
-| TRFX Signal | 12 | +157.96 EUR | +1.56% |
-| **Totale** | **21** | **+34.58 EUR** | **+0.34%** |
+| GridMartingala | 3 | -4.49 EUR | -0.04% |
+| TRFX Extra | 6 | -120.36 EUR | -1.19% |
+| TRFX Signal | 12 | +156.55 EUR | +1.55% |
+| **Totale** | **21** | **+31.70 EUR** | **+0.31%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| AUDNZD | Sell | 0.04 | 1.20000 | 1.22407 | -53.87 EUR | -240.7 | 1.23300 | 1.18000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.02 | 1.14784 | 1.15848 | -15.62 EUR | -106.4 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| AUDNZD | Sell | 0.04 | 1.20000 | 1.22382 | -53.36 EUR | -238.2 | 1.23300 | 1.18000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.02 | 1.14784 | 1.15889 | -16.32 EUR | -110.5 | 1.22000 | 1.05000 | TRFX_SIGNALS |
 | CADCHF | Buy | 0.01 | 0.57146 | 0.58732 | +18.98 EUR | 158.6 | — | — | TRFX_EXTRA_003 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.58732 | +18.99 EUR | 158.7 | — | — | TRFX_EXTRA_004 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.58732 | +18.99 EUR | 158.7 | — | — | TRFX_EXTRA_006 |
@@ -43,16 +43,16 @@
 | CADCHF | Buy | 0.01 | 0.57146 | 0.58732 | +18.98 EUR | 158.6 | — | — | TRFX_EXTRA_009 |
 | CADCHF | Buy | 0.01 | 0.57145 | 0.58732 | +18.99 EUR | 158.7 | — | — | TRFX_EXTRA_001 |
 | CADCHF | Buy | 0.01 | 0.57146 | 0.58732 | +18.98 EUR | 158.6 | — | — | TRFX_EXTRA_002 |
-| EURUSD | Sell | 0.02 | 1.15257 | 1.15848 | -8.55 EUR | -59.1 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| EURUSD | Sell | 0.02 | 1.15257 | 1.15889 | -9.26 EUR | -63.2 | 1.22000 | 1.05000 | TRFX_SIGNALS |
 | CADCHF | Buy | 0.02 | 0.58266 | 0.58732 | +11.27 EUR | 46.6 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| EURUSD | Sell | 0.04 | 1.15752 | 1.15848 | -0.49 EUR | -9.6 | 1.18100 | 1.12000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.04 | 1.20716 | 1.22407 | -36.34 EUR | -169.1 | 1.23500 | 1.16000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.04 | 1.21333 | 1.22407 | -22.68 EUR | -107.4 | 1.24100 | 1.16000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.02 | 1.22111 | 1.22407 | -3.38 EUR | -29.6 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.03 | 1.22414 | 1.22407 | -0.49 EUR | 0.7 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.04 | 1.15720 | 1.15848 | -4.33 EUR | -12.8 | 1.18300 | 1.12000 | TRFX_EXTRA |
-| GBPUSD | Sell | 0.04 | 1.34825 | 1.34816 | -0.10 EUR | 0.9 | 1.37200 | 1.31000 | TRFX_EXTRA |
-| AUDCHF | Sell | 0.02 | 0.58187 | 0.58238 | -1.70 EUR | -5.1 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.04 | 1.15752 | 1.15889 | -1.91 EUR | -13.7 | 1.18100 | 1.12000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.04 | 1.20716 | 1.22382 | -35.83 EUR | -166.6 | 1.23500 | 1.16000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.04 | 1.21333 | 1.22382 | -22.18 EUR | -104.9 | 1.24100 | 1.16000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.02 | 1.22111 | 1.22382 | -3.13 EUR | -27.1 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.03 | 1.22414 | 1.22382 | -0.12 EUR | 3.2 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.04 | 1.15720 | 1.15889 | -5.74 EUR | -16.9 | 1.18300 | 1.12000 | TRFX_EXTRA |
+| GBPUSD | Sell | 0.04 | 1.34825 | 1.34852 | -1.34 EUR | -2.7 | 1.37200 | 1.31000 | TRFX_EXTRA |
+| AUDCHF | Sell | 0.02 | 0.58187 | 0.58216 | -1.24 EUR | -2.9 | — | — | GridMartDailyFinalFixed |
 
 ---
 
