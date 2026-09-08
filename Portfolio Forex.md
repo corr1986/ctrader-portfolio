@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 08/09/2026 13:35 UTC*
+*Aggiornato: 08/09/2026 14:35 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 10096.27 EUR |
-| Equity | 9300.15 EUR |
-| P&L non realizzato | -796.12 EUR |
+| Equity | 9475.85 EUR |
+| P&L non realizzato | -620.42 EUR |
 | P&L realizzato totale | +483.17 EUR |
 | Posizioni aperte | 37 |
 | Trade chiusi totali | 158 (123W / 35L) |
@@ -22,53 +22,53 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| GridMartingala | 27 | -652.98 EUR | -6.47% |
-| TRFX Extra | 6 | -117.76 EUR | -1.17% |
-| TRFX Signal | 4 | -25.14 EUR | -0.25% |
-| **Totale** | **37** | **-795.88 EUR** | **-7.88%** |
+| GridMartingala | 27 | -465.36 EUR | -4.61% |
+| TRFX Extra | 6 | -125.49 EUR | -1.24% |
+| TRFX Signal | 4 | -29.73 EUR | -0.29% |
+| **Totale** | **37** | **-620.58 EUR** | **-6.15%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| GBPUSD | Sell | 0.04 | 1.35400 | 1.35509 | -4.02 EUR | -10.9 | 1.38000 | 1.30000 | TRFX_EXTRA |
-| CHFJPY | Buy | 0.02 | 193.55800 | 189.89300 | -41.45 EUR | -366.5 | — | — | GridMartDailyFinalFixed |
-| AUDCHF | Sell | 0.03 | 0.58366 | 0.58494 | -4.76 EUR | -12.8 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.04 | 1.22545 | 1.23400 | -18.00 EUR | -85.5 | 1.24500 | 1.17000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.04 | 1.15752 | 1.16199 | -12.27 EUR | -44.7 | 1.18100 | 1.12000 | TRFX_EXTRA |
-| GBPJPY | Buy | 0.02 | 211.65700 | 208.36600 | -36.52 EUR | -329.1 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.03 | 1.22414 | 1.23400 | -15.95 EUR | -98.6 | — | — | GridMartDailyFinalFixed |
-| EURJPY | Buy | 0.02 | 181.29400 | 178.67600 | -29.32 EUR | -261.8 | — | — | GridMartDailyFinalFixed |
-| GBPJPY | Buy | 0.03 | 211.04200 | 208.36600 | -44.67 EUR | -267.6 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.02 | 1.16150 | 1.16199 | -0.79 EUR | -4.9 | 1.18600 | 1.13000 | TRFX_SIGNALS |
-| GBPUSD | Sell | 0.04 | 1.34825 | 1.35509 | -24.17 EUR | -68.4 | 1.37200 | 1.31000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.04 | 1.15720 | 1.16199 | -16.10 EUR | -47.9 | 1.18300 | 1.12000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.02 | 1.22111 | 1.23400 | -13.68 EUR | -128.9 | — | — | GridMartDailyFinalFixed |
-| CHFJPY | Buy | 0.04 | 192.35600 | 189.89300 | -55.78 EUR | -246.3 | — | — | GridMartDailyFinalFixed |
-| EURUSD | Sell | 0.02 | 1.14784 | 1.16199 | -21.45 EUR | -141.5 | 1.22000 | 1.05000 | TRFX_SIGNALS |
-| EURUSD | Sell | 0.02 | 1.15257 | 1.16199 | -14.41 EUR | -94.2 | 1.22000 | 1.05000 | TRFX_SIGNALS |
-| CHFJPY | Buy | 0.03 | 192.96900 | 189.89300 | -52.13 EUR | -307.6 | — | — | GridMartDailyFinalFixed |
-| GBPAUD | Buy | 0.02 | 1.87867 | 1.87588 | -3.78 EUR | -27.9 | — | — | GridMartDailyFinalFixed |
-| AUDCHF | Sell | 0.02 | 0.58187 | 0.58494 | -7.66 EUR | -30.7 | — | — | GridMartDailyFinalFixed |
-| CADCHF | Buy | 0.02 | 0.58266 | 0.58736 | +11.51 EUR | 47.0 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| AUDNZD | Sell | 0.04 | 1.21333 | 1.23400 | -43.20 EUR | -206.7 | 1.24100 | 1.16000 | TRFX_EXTRA |
-| AUDNZD | Sell | 0.04 | 1.22725 | 1.23400 | -13.99 EUR | -67.5 | — | — | GridMartDailyFinalFixed |
-| GBPAUD | Buy | 0.03 | 1.87481 | 1.87588 | +1.73 EUR | 10.7 | — | — | GridMartDailyFinalFixed |
-| EURJPY | Buy | 0.03 | 180.82100 | 178.67700 | -36.10 EUR | -214.4 | — | — | GridMartDailyFinalFixed |
-| GBPJPY | Buy | 0.04 | 210.45500 | 208.36600 | -46.69 EUR | -208.9 | — | — | GridMartDailyFinalFixed |
-| CHFJPY | Buy | 0.05 | 191.71000 | 189.89300 | -51.38 EUR | -181.7 | — | — | GridMartDailyFinalFixed |
-| EURJPY | Buy | 0.04 | 180.35000 | 178.67700 | -37.57 EUR | -167.3 | — | — | GridMartDailyFinalFixed |
-| GBPJPY | Buy | 0.05 | 209.85600 | 208.36600 | -41.60 EUR | -149.0 | — | — | GridMartDailyFinalFixed |
-| CHFJPY | Buy | 0.06 | 191.08800 | 189.89300 | -40.76 EUR | -119.5 | — | — | GridMartDailyFinalFixed |
-| EURJPY | Buy | 0.05 | 179.68000 | 178.67700 | -28.33 EUR | -100.3 | — | — | GridMartDailyFinalFixed |
-| GBPJPY | Buy | 0.06 | 209.15500 | 208.36800 | -26.73 EUR | -78.7 | — | — | GridMartDailyFinalFixed |
-| CHFJPY | Buy | 0.07 | 190.49900 | 189.89300 | -24.10 EUR | -60.6 | — | — | GridMartDailyFinalFixed |
-| EURJPY | Buy | 0.06 | 179.18800 | 178.67700 | -17.46 EUR | -51.1 | — | — | GridMartDailyFinalFixed |
-| GBPJPY | Buy | 0.07 | 208.20200 | 208.36800 | +6.14 EUR | 16.6 | — | — | GridMartDailyFinalFixed |
-| CHFJPY | Buy | 0.08 | 189.59700 | 189.89300 | +12.83 EUR | 29.6 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.05 | 1.23204 | 1.23400 | -5.20 EUR | -19.6 | — | — | GridMartDailyFinalFixed |
-| AUDCHF | Sell | 0.04 | 0.58544 | 0.58494 | +1.93 EUR | 5.0 | — | — | GridMartDailyFinalFixed |
+| GBPUSD | Sell | 0.04 | 1.35400 | 1.35555 | -5.60 EUR | -15.5 | 1.38000 | 1.30000 | TRFX_EXTRA |
+| CHFJPY | Buy | 0.02 | 193.55800 | 190.38000 | -35.93 EUR | -317.8 | — | — | GridMartDailyFinalFixed |
+| AUDCHF | Sell | 0.03 | 0.58366 | 0.58449 | -3.33 EUR | -8.3 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.04 | 1.22545 | 1.23347 | -16.93 EUR | -80.2 | 1.24500 | 1.17000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.04 | 1.15752 | 1.16297 | -15.63 EUR | -54.5 | 1.18100 | 1.12000 | TRFX_EXTRA |
+| GBPJPY | Buy | 0.02 | 211.65700 | 208.67100 | -33.04 EUR | -298.6 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.03 | 1.22414 | 1.23347 | -15.15 EUR | -93.3 | — | — | GridMartDailyFinalFixed |
+| EURJPY | Buy | 0.02 | 181.29400 | 179.02900 | -25.32 EUR | -226.5 | — | — | GridMartDailyFinalFixed |
+| GBPJPY | Buy | 0.03 | 211.04200 | 208.67100 | -39.47 EUR | -237.1 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.02 | 1.16150 | 1.16297 | -2.48 EUR | -14.7 | 1.18600 | 1.13000 | TRFX_SIGNALS |
+| GBPUSD | Sell | 0.04 | 1.34825 | 1.35555 | -25.73 EUR | -73.0 | 1.37200 | 1.31000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.04 | 1.15720 | 1.16297 | -19.46 EUR | -57.7 | 1.18300 | 1.12000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.02 | 1.22111 | 1.23347 | -13.15 EUR | -123.6 | — | — | GridMartDailyFinalFixed |
+| CHFJPY | Buy | 0.04 | 192.35600 | 190.37800 | -44.83 EUR | -197.8 | — | — | GridMartDailyFinalFixed |
+| EURUSD | Sell | 0.02 | 1.14784 | 1.16297 | -23.12 EUR | -151.3 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| EURUSD | Sell | 0.02 | 1.15257 | 1.16297 | -16.09 EUR | -104.0 | 1.22000 | 1.05000 | TRFX_SIGNALS |
+| CHFJPY | Buy | 0.03 | 192.96900 | 190.37800 | -43.90 EUR | -259.1 | — | — | GridMartDailyFinalFixed |
+| GBPAUD | Buy | 0.02 | 1.87867 | 1.87529 | -4.51 EUR | -33.8 | — | — | GridMartDailyFinalFixed |
+| AUDCHF | Sell | 0.02 | 0.58187 | 0.58449 | -6.70 EUR | -26.2 | — | — | GridMartDailyFinalFixed |
+| CADCHF | Buy | 0.02 | 0.58266 | 0.58757 | +11.96 EUR | 49.1 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| AUDNZD | Sell | 0.04 | 1.21333 | 1.23347 | -42.14 EUR | -201.4 | 1.24100 | 1.16000 | TRFX_EXTRA |
+| AUDNZD | Sell | 0.04 | 1.22725 | 1.23347 | -12.93 EUR | -62.2 | — | — | GridMartDailyFinalFixed |
+| GBPAUD | Buy | 0.03 | 1.87481 | 1.87529 | +0.63 EUR | 4.8 | — | — | GridMartDailyFinalFixed |
+| EURJPY | Buy | 0.03 | 180.82100 | 179.02900 | -30.13 EUR | -179.2 | — | — | GridMartDailyFinalFixed |
+| GBPJPY | Buy | 0.04 | 210.45500 | 208.67100 | -39.78 EUR | -178.4 | — | — | GridMartDailyFinalFixed |
+| CHFJPY | Buy | 0.05 | 191.71000 | 190.37800 | -37.73 EUR | -133.2 | — | — | GridMartDailyFinalFixed |
+| EURJPY | Buy | 0.04 | 180.35000 | 179.02900 | -29.63 EUR | -132.1 | — | — | GridMartDailyFinalFixed |
+| GBPJPY | Buy | 0.05 | 209.85600 | 208.67100 | -33.01 EUR | -118.5 | — | — | GridMartDailyFinalFixed |
+| CHFJPY | Buy | 0.06 | 191.08800 | 190.37800 | -24.43 EUR | -71.0 | — | — | GridMartDailyFinalFixed |
+| EURJPY | Buy | 0.05 | 179.68000 | 179.02900 | -18.44 EUR | -65.1 | — | — | GridMartDailyFinalFixed |
+| GBPJPY | Buy | 0.06 | 209.15500 | 208.67400 | -16.42 EUR | -48.1 | — | — | GridMartDailyFinalFixed |
+| CHFJPY | Buy | 0.07 | 190.49900 | 190.37800 | -5.09 EUR | -12.1 | — | — | GridMartDailyFinalFixed |
+| EURJPY | Buy | 0.06 | 179.18800 | 179.02900 | -5.63 EUR | -15.9 | — | — | GridMartDailyFinalFixed |
+| GBPJPY | Buy | 0.07 | 208.20200 | 208.67400 | +18.10 EUR | 47.2 | — | — | GridMartDailyFinalFixed |
+| CHFJPY | Buy | 0.08 | 189.59700 | 190.37800 | +34.48 EUR | 78.1 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.05 | 1.23204 | 1.23347 | -3.86 EUR | -14.3 | — | — | GridMartDailyFinalFixed |
+| AUDCHF | Sell | 0.04 | 0.58544 | 0.58449 | +3.84 EUR | 9.5 | — | — | GridMartDailyFinalFixed |
 
 ---
 
