@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 19/09/2026 08:28 UTC*
+*Aggiornato: 19/09/2026 08:58 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
