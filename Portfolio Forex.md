@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 18/09/2026 23:28 UTC*
+*Aggiornato: 19/09/2026 00:28 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -8,8 +8,8 @@
 ## Riepilogo
 | Voce | Valore |
 |---|---|
-| Balance | 10705.26 EUR |
-| Equity | 10367.64 EUR |
+| Balance | 10500.00 EUR |
+| Equity | 10162.38 EUR |
 | P&L non realizzato | -337.62 EUR |
 | P&L realizzato totale | +1092.16 EUR |
 | Posizioni aperte | 36 |
@@ -22,10 +22,10 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| GridMartingala | 29 | -383.06 EUR | -3.58% |
+| GridMartingala | 29 | -383.06 EUR | -3.65% |
 | TRFX Extra | 2 | -7.22 EUR | -0.07% |
-| TRFX Signal | 5 | +52.66 EUR | +0.49% |
-| **Totale** | **36** | **-337.62 EUR** | **-3.15%** |
+| TRFX Signal | 5 | +52.66 EUR | +0.50% |
+| **Totale** | **36** | **-337.62 EUR** | **-3.22%** |
 
 ---
 
