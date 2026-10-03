@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 03/10/2026 04:53 UTC*
+*Aggiornato: 03/10/2026 05:53 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -32,6 +32,7 @@
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
+| CADCHF | Buy | 0.02 | 0.58349 | 0.58132 | -4.65 EUR | -21.7 | 0.55000 | 0.63100 | TRFX_SIGNALS |
 | GBPUSD | Buy | 0.02 | 1.33040 | 1.32372 | -12.45 EUR | -66.8 | — | — | GridMartDailyFinalFixed |
 | EURJPY | Buy | 0.04 | 180.10100 | 177.59300 | -56.05 EUR | -250.8 | — | — | GridMartDailyFinalFixed |
 | USDCAD | Sell | 0.02 | 1.41054 | 1.42537 | -19.50 EUR | -148.3 | — | — | GridMartDailyFinalFixed |
@@ -78,13 +79,12 @@
 | GBPUSD | Buy | 0.04 | 1.32454 | 1.32372 | -3.29 EUR | -8.2 | — | — | GridMartDailyFinalFixed |
 | NZDCAD | Buy | 0.03 | 0.79977 | 0.79939 | -0.97 EUR | -3.8 | — | — | GridMartDailyFinalFixed |
 | EURUSD | Buy | 0.08 | 1.12928 | 1.12520 | -30.35 EUR | -40.8 | — | — | GridMartDailyFinalFixed |
+| AUDNZD | Sell | 0.04 | 1.23802 | 1.24044 | -5.24 EUR | -24.2 | 1.25900 | 1.18000 | TRFX_EXTRA |
 | GBPJPY | Buy | 0.06 | 208.71300 | 208.97200 | +9.29 EUR | 25.9 | — | — | GridMartDailyFinalFixed |
 | EURJPY | Buy | 0.08 | 177.73500 | 177.59300 | -6.49 EUR | -14.2 | — | — | GridMartDailyFinalFixed |
-| CADCHF | Buy | 0.02 | 0.58349 | 0.58132 | -4.65 EUR | -21.7 | 0.55000 | 0.63100 | TRFX_SIGNALS |
 | GBPJPY | Buy | 0.07 | 208.05900 | 208.97200 | +36.59 EUR | 91.3 | — | — | GridMartDailyFinalFixed |
 | EURJPY | Buy | 0.09 | 177.09400 | 177.59300 | +25.16 EUR | 49.9 | — | — | GridMartDailyFinalFixed |
 | EURUSD | Buy | 0.09 | 1.12430 | 1.12520 | +6.20 EUR | 9.0 | — | — | GridMartDailyFinalFixed |
-| AUDNZD | Sell | 0.04 | 1.23802 | 1.24044 | -5.24 EUR | -24.2 | 1.25900 | 1.18000 | TRFX_EXTRA |
 | USDCHF | Sell | 0.03 | 0.82787 | 0.82898 | -4.05 EUR | -11.1 | — | — | GridMartDailyFinalFixed |
 | EURNZD | Sell | 0.03 | 2.00626 | 2.00538 | +1.09 EUR | 8.8 | — | — | GridMartDailyFinalFixed |
 
