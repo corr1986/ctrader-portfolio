@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 02/11/2026 06:57 UTC*
+*Aggiornato: 02/11/2026 07:27 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -8,13 +8,13 @@
 ## Riepilogo
 | Voce | Valore |
 |---|---|
-| Balance | 9800.92 EUR |
-| Equity | 9679.64 EUR |
-| P&L non realizzato | -121.28 EUR |
-| P&L realizzato totale | +1185.69 EUR |
+| Balance | 9776.38 EUR |
+| Equity | 9641.44 EUR |
+| P&L non realizzato | -134.94 EUR |
+| P&L realizzato totale | +1161.15 EUR |
 | Posizioni aperte | 8 |
-| Trade chiusi totali | 432 (332W / 100L) |
-| Win Rate | 76.9% |
+| Trade chiusi totali | 433 (332W / 101L) |
+| Win Rate | 76.7% |
 
 ---
 
@@ -22,23 +22,23 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| TRFX Extra | 4 | -98.93 EUR | -1.01% |
-| TRFX Signal | 4 | -22.35 EUR | -0.23% |
-| **Totale** | **8** | **-121.28 EUR** | **-1.24%** |
+| TRFX Extra | 4 | -108.31 EUR | -1.11% |
+| TRFX Signal | 4 | -26.63 EUR | -0.27% |
+| **Totale** | **8** | **-134.94 EUR** | **-1.38%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| CADCHF | Buy | 0.02 | 0.58658 | 0.58892 | +5.92 EUR | 23.4 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| GBPUSD | Sell | 0.02 | 1.33142 | 1.34041 | -16.45 EUR | -89.9 | 1.40000 | 1.25000 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.02 | 0.59092 | 0.58892 | -4.15 EUR | -20.0 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| GBPUSD | Sell | 0.04 | 1.32845 | 1.34041 | -43.19 EUR | -119.6 | 1.36100 | 1.30000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.04 | 1.11248 | 1.11866 | -21.83 EUR | -61.8 | 1.13500 | 1.09000 | TRFX_EXTRA |
-| GBPUSD | Sell | 0.04 | 1.33371 | 1.34041 | -24.38 EUR | -67.0 | 1.35700 | 1.30000 | TRFX_EXTRA |
-| EURUSD | Sell | 0.04 | 1.11600 | 1.11866 | -9.53 EUR | -26.6 | 1.13800 | 1.08000 | TRFX_EXTRA |
-| GBPUSD | Sell | 0.02 | 1.33620 | 1.34041 | -7.67 EUR | -42.1 | 1.40000 | 1.25000 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.58658 | 0.58864 | +5.31 EUR | 20.6 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| GBPUSD | Sell | 0.02 | 1.33142 | 1.34127 | -17.98 EUR | -98.5 | 1.40000 | 1.25000 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.59092 | 0.58864 | -4.76 EUR | -22.8 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| GBPUSD | Sell | 0.04 | 1.32845 | 1.34127 | -46.24 EUR | -128.2 | 1.36100 | 1.30000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.04 | 1.11248 | 1.11912 | -23.46 EUR | -66.4 | 1.13500 | 1.09000 | TRFX_EXTRA |
+| GBPUSD | Sell | 0.04 | 1.33371 | 1.34127 | -27.44 EUR | -75.6 | 1.35700 | 1.30000 | TRFX_EXTRA |
+| EURUSD | Sell | 0.04 | 1.11600 | 1.11912 | -11.17 EUR | -31.2 | 1.13800 | 1.08000 | TRFX_EXTRA |
+| GBPUSD | Sell | 0.02 | 1.33620 | 1.34127 | -9.20 EUR | -50.7 | 1.40000 | 1.25000 | TRFX_SIGNALS |
 
 ---
 
