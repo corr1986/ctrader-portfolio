@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 17/11/2026 07:56 UTC*
+*Aggiornato: 17/11/2026 08:26 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,10 +9,10 @@
 | Voce | Valore |
 |---|---|
 | Balance | 2935.78 EUR |
-| Equity | 2941.54 EUR |
-| P&L non realizzato | +5.76 EUR |
+| Equity | 2953.52 EUR |
+| P&L non realizzato | +17.74 EUR |
 | P&L realizzato totale | +1320.55 EUR |
-| Posizioni aperte | 4 |
+| Posizioni aperte | 5 |
 | Trade chiusi totali | 453 (348W / 105L) |
 | Win Rate | 76.8% |
 
@@ -22,19 +22,21 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| TRFX Extra | 1 | +1.42 EUR | +0.05% |
-| TRFX Signal | 3 | +4.34 EUR | +0.15% |
-| **Totale** | **4** | **+5.76 EUR** | **+0.20%** |
+| TRFX Extra | 1 | +2.45 EUR | +0.08% |
+| TRFX Signal | 3 | +5.38 EUR | +0.18% |
+| Altro | 1 | +9.91 EUR | +0.34% |
+| **Totale** | **5** | **+17.74 EUR** | **+0.60%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| CADCHF | Buy | 0.02 | 0.58658 | 0.58720 | +2.91 EUR | 6.2 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.02 | 0.59092 | 0.58720 | -7.13 EUR | -37.2 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.02 | 0.58349 | 0.58720 | +8.56 EUR | 37.1 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| EURCAD | Sell | 0.02 | 1.57455 | 1.57326 | +1.42 EUR | 12.9 | 1.62200 | 1.53000 | TRFX_EXTRA |
+| CADCHF | Buy | 0.02 | 0.58658 | 0.58736 | +3.26 EUR | 7.8 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.59092 | 0.58736 | -6.79 EUR | -35.6 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.58349 | 0.58736 | +8.91 EUR | 38.7 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| EURCAD | Sell | 0.02 | 1.57455 | 1.57245 | +2.45 EUR | 21.0 | 1.62200 | 1.53000 | TRFX_EXTRA |
+| US100 | Buy | 1.00 | 27247.75000 | 27258.65000 | +9.91 EUR | 109.0 | 27173.79000 | 27444.25000 | — |
 
 ---
 
