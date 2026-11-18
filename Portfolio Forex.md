@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 18/11/2026 11:26 UTC*
+*Aggiornato: 18/11/2026 11:56 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -9,8 +9,8 @@
 | Voce | Valore |
 |---|---|
 | Balance | 2833.79 EUR |
-| Equity | 2845.89 EUR |
-| P&L non realizzato | +12.10 EUR |
+| Equity | 2851.63 EUR |
+| P&L non realizzato | +17.84 EUR |
 | P&L realizzato totale | +1218.56 EUR |
 | Posizioni aperte | 5 |
 | Trade chiusi totali | 456 (349W / 107L) |
@@ -22,20 +22,20 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| TRFX Extra | 2 | +0.18 EUR | +0.01% |
-| TRFX Signal | 3 | +11.92 EUR | +0.42% |
-| **Totale** | **5** | **+12.10 EUR** | **+0.43%** |
+| TRFX Extra | 2 | +1.30 EUR | +0.05% |
+| TRFX Signal | 3 | +16.54 EUR | +0.58% |
+| **Totale** | **5** | **+17.84 EUR** | **+0.63%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| CADCHF | Buy | 0.02 | 0.58658 | 0.58834 | +5.44 EUR | 17.6 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.02 | 0.59092 | 0.58834 | -4.61 EUR | -25.8 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.02 | 0.58349 | 0.58834 | +11.09 EUR | 48.5 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| AUDNZD | Sell | 0.02 | 1.22366 | 1.22407 | -0.62 EUR | -4.1 | 1.25500 | 1.18000 | TRFX_EXTRA |
-| EURCAD | Sell | 0.02 | 1.57038 | 1.56967 | +0.80 EUR | 7.1 | 1.61600 | 1.52000 | TRFX_EXTRA |
+| CADCHF | Buy | 0.02 | 0.58658 | 0.58905 | +6.98 EUR | 24.7 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.59092 | 0.58905 | -3.07 EUR | -18.7 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.58349 | 0.58905 | +12.63 EUR | 55.6 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| AUDNZD | Sell | 0.02 | 1.22366 | 1.22452 | -1.07 EUR | -8.6 | 1.25500 | 1.18000 | TRFX_EXTRA |
+| EURCAD | Sell | 0.02 | 1.57038 | 1.56844 | +2.37 EUR | 19.4 | 1.61600 | 1.52000 | TRFX_EXTRA |
 
 ---
 
