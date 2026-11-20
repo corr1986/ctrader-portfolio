@@ -1,5 +1,5 @@
 # Portfolio Forex — cTrader
-*Aggiornato: 20/11/2026 18:58 UTC*
+*Aggiornato: 20/11/2026 19:58 UTC*
 
 [📊 Vedi snapshot JSON su GitHub](https://github.com/corr1986/ctrader-portfolio/blob/main/account_snapshot.json)
 
@@ -22,19 +22,19 @@
 *P&L non realizzato delle posizioni aperte, % sul balance del conto.*
 | Strategia | Pos | P&L | % su balance |
 |---|---|---|---|
-| TRFX Extra | 1 | -2.26 EUR | +0.00% |
-| TRFX Signal | 3 | -0.71 EUR | +0.00% |
-| **Totale** | **4** | **-2.97 EUR** | **+0.00%** |
+| TRFX Extra | 1 | -2.32 EUR | +0.00% |
+| TRFX Signal | 3 | -6.78 EUR | +0.00% |
+| **Totale** | **4** | **-9.10 EUR** | **+0.00%** |
 
 ---
 
 ## Posizioni aperte
 | Symbol | Dir | Lotti | Entry | Corrente | P&L | Pips | SL | TP | Label |
 |---|---|---|---|---|---|---|---|---|---|
-| CADCHF | Buy | 0.02 | 0.58658 | 0.58629 | +1.23 EUR | -2.9 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| CADCHF | Buy | 0.02 | 0.59092 | 0.58629 | -8.84 EUR | -46.3 | 0.55000 | 0.63100 | TRFX_SIGNALS |
-| EURCAD | Sell | 0.02 | 1.57038 | 1.57191 | -2.26 EUR | -15.3 | 1.61600 | 1.52000 | TRFX_EXTRA |
-| CADCHF | Buy | 0.02 | 0.58349 | 0.58629 | +6.90 EUR | 28.0 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.58658 | 0.58536 | -0.79 EUR | -12.2 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| CADCHF | Buy | 0.02 | 0.59092 | 0.58536 | -10.87 EUR | -55.6 | 0.55000 | 0.63100 | TRFX_SIGNALS |
+| EURCAD | Sell | 0.02 | 1.57038 | 1.57196 | -2.32 EUR | -15.8 | 1.61600 | 1.52000 | TRFX_EXTRA |
+| CADCHF | Buy | 0.02 | 0.58349 | 0.58536 | +4.88 EUR | 18.7 | 0.55000 | 0.63100 | TRFX_SIGNALS |
 
 ---
 
